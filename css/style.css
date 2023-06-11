@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 :root {
-    --primary:white;
+    --primary: white;
     --secondary: #321e06c6;
     --text: #000000;
 }
@@ -17,12 +17,19 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto";
 
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     text-transform: uppercase;
     color: var(--primary);
 }
@@ -55,7 +62,7 @@ navbar a {
 navbar a:hover,
 .active {
     font-weight: bold;
-    border-bottom: 3px solid #9f631e;
+    border-bottom: 3px solid white;
 }
 
 .hamburger-menu {
@@ -84,7 +91,8 @@ main {
 }
 
 
-main h2, h3 {
+main h2,
+h3 {
     color: #201810c4;
     text-transform: uppercase;
     text-shadow: 5px 3px 20px rgb(164, 87, 15);
@@ -95,7 +103,11 @@ main h2, h3 {
 li {
     text-indent: 25px;
     line-height: 2rem;
-  
+
+}
+
+.blue {
+    color: blue;
 }
 
 
@@ -168,17 +180,12 @@ footer {
     border-radius: 50%;
 }
 
-.verde {
-    color: #21291b00;
-   
-
-}
 
 
 .pasare {
     width: 150px;
-   
- }
+
+}
 
 .top-section {
     min-height: 320px;
@@ -267,7 +274,7 @@ footer {
     padding-top: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: linear-gradient(to right, white, rgba(232, 220, 198, 0.877));
+    /* background: linear-gradient(to right, white, rgba(232, 220, 198, 0.877)); */
     float: left;
     box-sizing: border-box;
     margin-left: 1%;
@@ -276,7 +283,7 @@ footer {
     position: relative;
     color: text;
     font-size: 1.1rem;
-    
+
 
 }
 
@@ -414,27 +421,7 @@ li::before {
 
 }
 
-.scrolUp {
-    position:fixed;
-    bottom: 80px;
-    right: 25px;
-    height: 50px;
-    font-size: 40px;
-    cursor: pointer;
 
-
-}
-
-.scrolUp:hover {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    height: 45px;
-    font-size: 30px;
-    cursor: pointer;
-    animation: scrol 1.9s ease infinite;
-
-}
 
 
 @keyframes coboara-meniu {
@@ -449,17 +436,7 @@ li::before {
 
 }
 
-@keyframes scrol {
-    0% {
-        font-size: 40px;
-        color: rgba(0, 0, 0, 0.911)
-    }
 
-    100% {
-        transform: translateY(0px);
-    }
-
-}
 
 @keyframes imagine {
     0% {
@@ -490,6 +467,7 @@ li::before {
     main {
         padding: 10px 4%;
     }
+
     [class^='col-'] {
         width: 100%;
         padding: 10px 10px;
@@ -514,7 +492,8 @@ li::before {
         width: 350px;
     }
 
-    p, ul {
+    p,
+    ul {
         font-size: 0.9rem;
 
     }
@@ -541,18 +520,26 @@ li::before {
         text-transform: uppercase;
         text-align: center;
         margin-top: 150px;
-
     }
-
 
     #navbar a {
         display: block;
         font-size: 16px;
         margin-top: 2px;
+        /* color:var(--text) !important; */
+        font-style: unset;
+
+
     }
 
     #navbar {
         margin-top: -17px;
+        /* background-color: #fcf6e8; */
+
+    }
+
+    header {
+        background-color: #2f291e86;
     }
 
     a.hamburger-menu {
@@ -560,12 +547,14 @@ li::before {
         position: absolute;
         right: 0;
         top: 0;
+
     }
 
     .nav.mobile a {
         float: none;
         display: block;
         text-align: left;
+
     }
 
     .h1 {
@@ -578,6 +567,7 @@ li::before {
         font-size: 16px;
         text-align: center;
     }
+
     .container-galerie img {
         width: 200px;
         height: 150px;
@@ -585,6 +575,6 @@ li::before {
         border: 2px solid rgb(185, 183, 183);
         border-radius: 8 px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+
     }
 }

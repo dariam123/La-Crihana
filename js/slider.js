@@ -9,7 +9,7 @@ $(document).ready(function () {
       animating = false,
       animTime = 50000,
       autoSlideTimeout,
-      autoSlideDelay = 60000,
+      autoSlideDelay = 4500,
       $pagination = $(".slider-pagi");
   
     function createBullets() {
